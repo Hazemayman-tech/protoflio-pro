@@ -3,43 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Features</title>
-    <link rel="stylesheet" href="./css.css"> <!-- تأكد من ربط ملف CSS الخاص بك -->
+    <title>PORTFOLIO (HAZEM)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./indexcss.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" class="logo"><span>Hazem</span> TECK</a>
+            <a href="https://github.com/Hazemayman-tech" class="logo"><span>Hazem</span> TECK</a>
             <ul class="links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">content</a></li>
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="./New folder/index.html">About</a></li>
+                <li><a href="./New folder/index.html">Skills</a></li>
+                <li><a href="./New folder/index.html">Projects</a></li>
+                <li><a href="./New folder/index.html">Content</a></li>
             </ul>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/x1VxtWqj8NSQZ82v/?mibextid=qi2Omg"><i class="fa-brands fa-facebook"></i></a>
+                <a href="http://t.me/HazemAymanabdo"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://github.com/Hazemayman-tech"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <i id="btnmenu" class="fa-solid fa-bars"></i>
         </nav>
     </header>
 
-    <div class="features-sec">
-        <h1>My Features</h1>
-        <ul>
-            <li>
-                <h2>Programming Skills</h2>
-                <p>I have a solid foundation in programming, having studied C, C++, and Python. These languages have provided me with a deep understanding of both procedural and object-oriented programming concepts.</p>
-            </li>
-            <li>
-                <h2>Web Development</h2>
-                <p>I am proficient in HTML and CSS, allowing me to create and design elegant and responsive web pages.</p>
-            </li>
-            <li>
-                <h2>Code.org</h2>
-                <p>I have gained hands-on experience with Code.org, where I honed my coding and problem-solving skills through interactive projects and challenges.</p>
-            </li>
-            <li>
-                <h2>Electronics Knowledge</h2>
-                <p>Alongside programming, I have also studied electronics, enabling me to understand and work with basic circuits and electronic components.</p>
-            </li>
-        </ul>
+    <div class="hero-sec">
+        <div class="container">
+            <div class="div-text">
+                <h1>Hazem Ayman</h1>
+                <span>Web Designer</span>
+                <p> I am a tech enthusiast with a solid foundation in programming languages like C, C++, and Python. 
+                    My web development skills in HTML and CSS allow me to create sleek and responsive websites. 
+                    Through my experience with Code.org, I have sharpened my problem-solving abilities and creativity. 
+                    Additionally, my knowledge of electronics enables me to understand and work with various circuits and components.</p>
+                <a href="./New folder/index.html" class="btns">My Works</a>
+            </div>
+            <div class="div-image">
+                <img src="./hero.png" alt="">
+            </div>
+        </div>
     </div>
+
+    <script>
+        let btnmenu = document.getElementById("btnmenu");
+        let navLinks = document.querySelector("nav ul.links");
+
+        btnmenu.onclick = function() {
+            btnmenu.classList.toggle("fa-times");
+            navLinks.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
