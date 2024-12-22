@@ -16,7 +16,6 @@
                 <li><a href="./New folder/index.html">About</a></li>
                 <li><a href="./New folder/index.html">Skills</a></li>
                 <li><a href="./New folder/index.html">Projects</a></li>
-                <li><a href="./New folder/index.html">Content</a></li>
             </ul>
             <div class="social-links">
                 <a href="https://www.facebook.com/share/x1VxtWqj8NSQZ82v/?mibextid=qi2Omg"><i class="fa-brands fa-facebook"></i></a>
@@ -52,6 +51,15 @@
             btnmenu.classList.toggle("fa-times");
             navLinks.classList.toggle("active");
         }
+        window.onload = function() {
+    const textDiv = document.querySelector('.hero-sec .container .div-text');
+    const imageDiv = document.querySelector('.hero-sec .container .div-image');
+
+    // Adding a delay to synchronize animations if needed
+    textDiv.style.animationDelay = "0.5s";
+    imageDiv.style.animationDelay = "1s";
+    };
+
     </script>
 </body>
 </html>
