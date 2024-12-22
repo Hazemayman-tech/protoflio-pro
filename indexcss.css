@@ -147,7 +147,6 @@ header nav .social-links a i:hover {
     display: none;
 }
 
-/* تغيير لتفعيل القائمة عند الضغط */
 @media(max-width:980px) {
     header nav .links {
         position: absolute;
@@ -219,4 +218,37 @@ header nav .social-links a i:hover {
 
         width: 100%;
     }
+}
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Apply Animations */
+.hero-sec .container .div-text {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0; /* Initial state for animation */
+}
+
+.hero-sec .container .div-image {
+    animation: slideIn 2s ease-in-out forwards;
+    opacity: 0; /* Initial state for animation */
 }
